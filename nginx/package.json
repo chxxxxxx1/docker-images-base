@@ -1,5 +1,13 @@
 {
-    "scripts": {
-        "build":"docker buildx build --platform linux/amd64,linux/arm64 -t registry.cn-hangzhou.aliyuncs.com/images-lib/image-base:nginx-1.0.0 --push ."
-    }
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "dependencies": {
+    "zx": "^8.1.2"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.3.0"
+  }
 }

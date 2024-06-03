@@ -1,0 +1,129 @@
+lockfileVersion: "9.0"
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      zx:
+        specifier: ^8.1.2
+        version: 8.1.2
+    devDependencies:
+      fs-extra:
+        specifier: ^11.2.0
+        version: 11.2.0
+      prettier:
+        specifier: ^3.3.0
+        version: 3.3.0
+
+packages:
+  "@types/fs-extra@11.0.4":
+    resolution:
+      {
+        integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==,
+      }
+
+  "@types/jsonfile@6.1.4":
+    resolution:
+      {
+        integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==,
+      }
+
+  "@types/node@20.14.0":
+    resolution:
+      {
+        integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==,
+      }
+
+  fs-extra@11.2.0:
+    resolution:
+      {
+        integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==,
+      }
+    engines: { node: ">=14.14" }
+
+  graceful-fs@4.2.11:
+    resolution:
+      {
+        integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==,
+      }
+
+  jsonfile@6.1.0:
+    resolution:
+      {
+        integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==,
+      }
+
+  prettier@3.3.0:
+    resolution:
+      {
+        integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==,
+      }
+    engines: { node: ">=14" }
+    hasBin: true
+
+  undici-types@5.26.5:
+    resolution:
+      {
+        integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==,
+      }
+
+  universalify@2.0.1:
+    resolution:
+      {
+        integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==,
+      }
+    engines: { node: ">= 10.0.0" }
+
+  zx@8.1.2:
+    resolution:
+      {
+        integrity: sha512-zkCiXKh8D/eo6r58OmJvO5mc2NthcSRvysb3fuS6VQlHPbEPBcxduRwM3m6ZfHj+7cLHcrahCnuO2TDAbW+6xw==,
+      }
+    engines: { node: ">= 12.17.0" }
+    hasBin: true
+
+snapshots:
+  "@types/fs-extra@11.0.4":
+    dependencies:
+      "@types/jsonfile": 6.1.4
+      "@types/node": 20.14.0
+    optional: true
+
+  "@types/jsonfile@6.1.4":
+    dependencies:
+      "@types/node": 20.14.0
+    optional: true
+
+  "@types/node@20.14.0":
+    dependencies:
+      undici-types: 5.26.5
+    optional: true
+
+  fs-extra@11.2.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.1
+
+  graceful-fs@4.2.11: {}
+
+  jsonfile@6.1.0:
+    dependencies:
+      universalify: 2.0.1
+    optionalDependencies:
+      graceful-fs: 4.2.11
+
+  prettier@3.3.0: {}
+
+  undici-types@5.26.5:
+    optional: true
+
+  universalify@2.0.1: {}
+
+  zx@8.1.2:
+    optionalDependencies:
+      "@types/fs-extra": 11.0.4
+      "@types/node": 20.14.0
