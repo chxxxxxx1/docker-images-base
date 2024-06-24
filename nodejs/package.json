@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "dependencies": {
+    "zx": "^8.1.2"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.3.0"
+  }
+}
