@@ -1,0 +1,4 @@
+{$SITE_ADDRESS}
+
+root * /home/admin/web
+file_server
